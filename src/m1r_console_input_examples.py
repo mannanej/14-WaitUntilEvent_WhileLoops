@@ -10,7 +10,7 @@ Authors: David Mutchler, Vibha Alangar, Matt Boutell, Dave Fisher,
 """  # DONE: 1. PUT YOUR NAME IN THE ABOVE LINE.
 
 ###############################################################################
-# DONE: 2.  Read and run this program.  Then do the following problems,
+# TODO: 2.  Read and run this program.  Then do the following problems,
 #   putting your answers RIGHT HERE IN THIS DOCUMENT.
 #
 #   1. Write a line of code that would input an INTEGER from the
@@ -36,7 +36,7 @@ Authors: David Mutchler, Vibha Alangar, Matt Boutell, Dave Fisher,
 #        nothing at all (just press the Enter key)
 #      -- try them!) when running the   input_an_integer   example?
 #      Put your answer here:
-#           They will all fail
+#           They Fail
 #   After you have PUT YOUR ANSWERS IN THIS COMMENT as described above,
 #     a. Find someone who has had HER answer checked.
 #        Ask her to check YOUR answers to the above.
