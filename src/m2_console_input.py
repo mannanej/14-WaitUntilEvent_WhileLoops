@@ -87,11 +87,12 @@ def print_an_integer_many_times_on_one_row():
     """
     string = ''
     x = int(input('Give me a integer: '))
+    x2 = 2 * x
     for k in range(x):
-        string = string + [k * 2]
+        string = string + str(x2)
     print(string)
     # -------------------------------------------------------------------------
-    # TODO: 4. Implement and test this function.
+    # DONE: 4. Implement and test this function.
     #   The testing code is already written for you (above).
     #
     # HINT: One way to print on a SINGLE line is to build up a string
@@ -130,8 +131,16 @@ def input_it_all():
          Peace & Love.
          Peace & Love.
     """
+    import math
+    f = float(input('Give me a float: '))
+    i = int(input('Give me a integer: '))
+    s = input('Give me a string: ')
+    for k in range(i):
+        print(math.sqrt(f))
+    for k in range(i):
+        print(s)
     # -------------------------------------------------------------------------
-    # TODO: 5. Implement and test this function.
+    # DONE: 5. Implement and test this function.
     #   The testing code is already written for you (above).
     # -------------------------------------------------------------------------
 
