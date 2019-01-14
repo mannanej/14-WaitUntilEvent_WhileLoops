@@ -441,8 +441,8 @@ def run_test_wait_for_sum_of_cubes():
     # Test 7:
     print()
     print('TEST STARTED!  Has it ended?')
-    expected = 1
-    actual = wait_for_sum_of_cubes(-5.2)
+    expected = 3
+    actual = wait_for_sum_of_cubes(10)
     print('Expected:', expected)
     print('Actual:  ', actual)
     print('TEST ENDED!')
@@ -454,8 +454,8 @@ def run_test_wait_for_sum_of_cubes():
     # Test 8:
     print()
     print('TEST STARTED!  Has it ended?')
-    expected = 1
-    actual = wait_for_sum_of_cubes(-5.2)
+    expected = 2
+    actual = wait_for_sum_of_cubes(3.9)
     print('Expected:', expected)
     print('Actual:  ', actual)
     print('TEST ENDED!')
@@ -494,10 +494,19 @@ def wait_for_sum_of_cubes(x):
     Type hints:
       :type x: float  [or an int]
     """
-
-
+    k = 0
+    total = 0
+    if x < 0:
+        return 1
+    while True:
+        if x > total:
+            k += 1
+            total += k ** 3
+        else:
+            break
+    return k
     # -------------------------------------------------------------------------
-    # TODO: 7. Implement and test this function.
+    # DONE: 7. Implement and test this function.
     #   Note that you should write its TEST function first (above).
     #
     # IMPLEMENTATION REQUIREMENT:
